@@ -7,7 +7,7 @@
 require 'prime'
 
 def trial_division(n)
-  return n if n == 1
+  return [n] if n == 1
 
   primes = Prime.each(Math.sqrt(n).to_i + 1).to_a
   prime_factors = []
